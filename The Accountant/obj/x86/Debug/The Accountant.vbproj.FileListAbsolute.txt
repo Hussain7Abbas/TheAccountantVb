@@ -8,3 +8,13 @@ E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مه�
 E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\The Accountant\obj\x86\Debug\The Accountant.pdb
 E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\The Accountant\obj\x86\Debug\The_Accountant.addForm.resources
 E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\The Accountant\obj\x86\Debug\The_Accountant.homeForm.resources
+E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\TheAccountantVb\The Accountant\obj\x86\Debug\The Accountant.exe
+E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\TheAccountantVb\The Accountant\obj\x86\Debug\The Accountant.xml
+E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\TheAccountantVb\The Accountant\obj\x86\Debug\The Accountant.pdb
+E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\TheAccountantVb\The Accountant\bin\Debug\The Accountant.exe
+E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\TheAccountantVb\The Accountant\bin\Debug\The Accountant.pdb
+E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\TheAccountantVb\The Accountant\bin\Debug\The Accountant.xml
+E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\TheAccountantVb\The Accountant\obj\x86\Debug\The_Accountant.addForm.resources
+E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\TheAccountantVb\The Accountant\obj\x86\Debug\The_Accountant.homeForm.resources
+E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\TheAccountantVb\The Accountant\obj\x86\Debug\The_Accountant.Resources.resources
+E:\هواياتي\برمجة\فيجول بيسك\مشاريع\مشاريع مهمة\The Accountant\TheAccountantVb\The Accountant\obj\x86\Debug\The Accountant.vbproj.GenerateResource.Cache

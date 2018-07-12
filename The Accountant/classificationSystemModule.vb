@@ -1,8 +1,8 @@
 ﻿Imports System.Data.OleDb
-Module Module1
+Module classificationSystemModule
     ' ========================================================= Variables =========================================================
     Public databaseName As String = "db1"
-    Public tableName As String = "Table1"
+    Public tableName As String = "classificationTable"
 
     Public DataAdapter_Var As New OleDbDataAdapter
     Public DataTable_Var As New DataTable
@@ -22,6 +22,14 @@ Module Module1
         DataAdapter_Var.Fill(DataTable_Var)
         DataGridView_Name.DataSource = DataTable_Var
     End Sub
+
+    Sub Get_Table(Optional ByVal Table_Name As String = "")
+        'كوداللود
+        DataTable_Var.Clear()
+        DataAdapter_Var = New OleDb.OleDbDataAdapter("select * from " & tableName & Table_Name, connAccess2003)
+        DataAdapter_Var.Fill(DataTable_Var)
+    End Sub
+
     Sub Save_Table()
         ' حفظ
         Save_Var = New OleDbCommandBuilder(DataAdapter_Var)
@@ -49,15 +57,13 @@ Module Module1
 
         End If
     End Sub
-    Sub Search_Table(ByVal Form_Name As Form _
-                     , ByVal DataGridView_Name As Windows.Forms.DataGridView _
-                     , ByVal Control_Name As Windows.Forms.Control _
-                     , ByVal Column_Name As String _
+    Sub Search_Table(ByVal searchKeyWord As String _
+                     , ByVal Class_No As String _
+                     , ByVal dataTable As DataTable _
                      , Optional ByVal Table_Name As String = "")
         DataTable_Var.Clear()
-        DataAdapter_Var = New OleDb.OleDbDataAdapter("select * from " & tableName & Table_Name & " where " & Column_Name & " like '%" & Control_Name.Text & "%'", connAccess2003)
-        DataAdapter_Var.Fill(DataTable_Var)
-        DataGridView_Name.DataSource = DataTable_Var
+        DataAdapter_Var = New OleDb.OleDbDataAdapter("select * from " & tableName & Table_Name & " where class" & Class_No & " like '%" & searchKeyWord & "%'", connAccess2003)
+        DataAdapter_Var.Fill(dataTable)
     End Sub
 
     Public Sub Change_Column_Header(ByVal DataGridView_Name As Windows.Forms.DataGridView, ByVal Column_Name As String, ByVal Column_Header As String)
