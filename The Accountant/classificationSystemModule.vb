@@ -23,11 +23,11 @@ Module classificationSystemModule
         DataGridView_Name.DataSource = DataTable_Var
     End Sub
 
-    Sub Get_Table(Optional ByVal Table_Name As String = "")
+    Sub Get_Table(ByVal TableVar As DataTable, Optional ByVal Table_Name As String = "")
         'كوداللود
-        DataTable_Var.Clear()
+        TableVar.Clear()
         DataAdapter_Var = New OleDb.OleDbDataAdapter("select * from " & tableName & Table_Name, connAccess2003)
-        DataAdapter_Var.Fill(DataTable_Var)
+        DataAdapter_Var.Fill(TableVar)
     End Sub
 
     Sub Save_Table()

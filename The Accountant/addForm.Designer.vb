@@ -22,31 +22,33 @@ Partial Class addForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.components = New System.ComponentModel.Container()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.saveButton = New System.Windows.Forms.Button()
         Me.canceButton = New System.Windows.Forms.Button()
         Me.class2ComboBox = New System.Windows.Forms.ComboBox()
         Me.class3ComboBox = New System.Windows.Forms.ComboBox()
         Me.class4ComboBox = New System.Windows.Forms.ComboBox()
         Me.class5ComboBox = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
-        'Label3
+        'Label1
         '
-        Me.Label3.BackColor = System.Drawing.Color.Navy
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label3.Font = New System.Drawing.Font("Tajawal", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(0, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(465, 47)
-        Me.Label3.TabIndex = 11
-        Me.Label3.Text = "اضافة سند صرف جديد"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label1.BackColor = System.Drawing.Color.Navy
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label1.Font = New System.Drawing.Font("Tajawal", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(465, 47)
+        Me.Label1.TabIndex = 11
+        Me.Label1.Text = "اضافة سند صرف جديد"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'saveButton
         '
@@ -82,61 +84,61 @@ Partial Class addForm
         'class2ComboBox
         '
         Me.class2ComboBox.FormattingEnabled = True
-        Me.class2ComboBox.Location = New System.Drawing.Point(148, 89)
+        Me.class2ComboBox.Location = New System.Drawing.Point(99, 66)
         Me.class2ComboBox.Name = "class2ComboBox"
-        Me.class2ComboBox.Size = New System.Drawing.Size(206, 32)
+        Me.class2ComboBox.Size = New System.Drawing.Size(354, 32)
         Me.class2ComboBox.TabIndex = 14
         '
         'class3ComboBox
         '
         Me.class3ComboBox.FormattingEnabled = True
-        Me.class3ComboBox.Location = New System.Drawing.Point(148, 127)
+        Me.class3ComboBox.Location = New System.Drawing.Point(99, 104)
         Me.class3ComboBox.Name = "class3ComboBox"
-        Me.class3ComboBox.Size = New System.Drawing.Size(206, 32)
+        Me.class3ComboBox.Size = New System.Drawing.Size(354, 32)
         Me.class3ComboBox.TabIndex = 15
         Me.class3ComboBox.Visible = False
         '
         'class4ComboBox
         '
         Me.class4ComboBox.FormattingEnabled = True
-        Me.class4ComboBox.Location = New System.Drawing.Point(148, 165)
+        Me.class4ComboBox.Location = New System.Drawing.Point(99, 142)
         Me.class4ComboBox.Name = "class4ComboBox"
-        Me.class4ComboBox.Size = New System.Drawing.Size(206, 32)
+        Me.class4ComboBox.Size = New System.Drawing.Size(354, 32)
         Me.class4ComboBox.TabIndex = 16
         Me.class4ComboBox.Visible = False
         '
         'class5ComboBox
         '
         Me.class5ComboBox.FormattingEnabled = True
-        Me.class5ComboBox.Location = New System.Drawing.Point(148, 203)
+        Me.class5ComboBox.Location = New System.Drawing.Point(99, 180)
         Me.class5ComboBox.Name = "class5ComboBox"
-        Me.class5ComboBox.Size = New System.Drawing.Size(206, 32)
+        Me.class5ComboBox.Size = New System.Drawing.Size(354, 32)
         Me.class5ComboBox.TabIndex = 17
         Me.class5ComboBox.Visible = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(59, 97)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(54, 24)
-        Me.Label1.TabIndex = 18
-        Me.Label1.Text = "الثنائي"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(59, 130)
+        Me.Label2.Location = New System.Drawing.Point(12, 69)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(55, 24)
-        Me.Label2.TabIndex = 19
-        Me.Label2.Text = "الثلاثي"
-        Me.Label2.Visible = False
+        Me.Label2.Size = New System.Drawing.Size(54, 24)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "الثنائي"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 102)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(55, 24)
+        Me.Label3.TabIndex = 19
+        Me.Label3.Text = "الثلاثي"
+        Me.Label3.Visible = False
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(59, 168)
+        Me.Label4.Location = New System.Drawing.Point(12, 140)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(58, 24)
         Me.Label4.TabIndex = 20
@@ -146,12 +148,15 @@ Partial Class addForm
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(59, 206)
+        Me.Label5.Location = New System.Drawing.Point(12, 178)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(76, 24)
         Me.Label5.TabIndex = 21
         Me.Label5.Text = "الخماسي"
         Me.Label5.Visible = False
+        '
+        'Timer1
+        '
         '
         'addForm
         '
@@ -163,15 +168,15 @@ Partial Class addForm
         Me.ControlBox = False
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.class5ComboBox)
         Me.Controls.Add(Me.class4ComboBox)
         Me.Controls.Add(Me.class3ComboBox)
         Me.Controls.Add(Me.class2ComboBox)
         Me.Controls.Add(Me.canceButton)
         Me.Controls.Add(Me.saveButton)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Tajawal", 12.0!, System.Drawing.FontStyle.Bold)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "addForm"
@@ -183,15 +188,16 @@ Partial Class addForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents saveButton As System.Windows.Forms.Button
     Friend WithEvents canceButton As System.Windows.Forms.Button
     Friend WithEvents class2ComboBox As System.Windows.Forms.ComboBox
     Friend WithEvents class3ComboBox As System.Windows.Forms.ComboBox
     Friend WithEvents class4ComboBox As System.Windows.Forms.ComboBox
     Friend WithEvents class5ComboBox As System.Windows.Forms.ComboBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 End Class
